@@ -1,0 +1,17 @@
+html 
+    head 
+        title="titulo"
+    body 
+        each producto in productos
+            table
+                tr
+                    th  nombre 
+                    th  precio
+                    th  imagen 
+                tr
+                    td= producto.title
+                    td= producto.price
+                    td 
+                        img(width=30 height=30 src=producto.thumbnail)
+
+    a(href="/index.html")="ir al formulario de ingreso"

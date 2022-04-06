@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Formulario de ingreso</title>
+    </head>
+    <body>
+        <p>Agregar producto</p>
+        <form action="/api/productos" method="POST">
+            <label>Nombre Producto</label><input name="title">
+            <label>Precio</label><input name="price">
+            <label>URL Imagen</label><input name="thumbnail">
+            <button>Enviar</button>
+        </form>
+
+        <a href="./api/productos">Ver los productos cargados</a>
+
+    </body>
+</html>

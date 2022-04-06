@@ -1,0 +1,19 @@
+ <html> 
+        <head> 
+            <title>Productos</title>
+        </head>
+    <body>
+        <h1>Listado de productos</h1>
+        <table>
+            <tr><th>Nombre</th><th>Precio</th><th>Imagen</th></tr>
+            <tr>
+            <%  productos.forEach(producto => { %>
+            <td><%= producto.title %></td>
+            <td> <%= producto.price %></td>
+            <td> <img src=" <%= producto.thumbnail %>" width=50 heigth=50> </img></td>
+            </tr>
+            <%  })   %>
+        </table>
+    <a href="/index.html">ir al formulario de ingreso</a>
+    </body> 
+    </html>
